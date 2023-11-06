@@ -3,7 +3,6 @@
 
     const addCourseToStudent = <T extends { name: string; id: number; email: string }>(student: T) => {
         const course = 'Next level web development'
-
         return {
             ...student,
             course
@@ -25,8 +24,8 @@
     })
 
     const student3 = addCourseToStudent({
-        name: 'Ashik',
         id: 10,
+        name: 'Ashik',
         email: 'ashik@gmail.com',
         emni: 'emni'
     });
